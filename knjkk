@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  Project: Beginner Landing Page
+  Author: IVANNA-STAR
+  Description: Simple responsive landing page with hero, features, and footer.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Landing Page</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #2196f3;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero .cta {
+      display: inline-block;
+      background: #fff;
+      color: #2196f3;
+      padding: 12px 30px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .hero .cta:hover {
+      background: #1976d2;
+      color: #fff;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      background: #fff;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .feature {
+      background: #e3f2fd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+      min-width: 0;
+      max-width: 300px;
+    }
+    .feature img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .feature-desc {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Footer Section */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+    .contact {
+      margin-bottom: 8px;
+    }
+    .copyright {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* Responsive Design for mobile (less than 700px) */
+    @media (max-width: 700px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature {
+        max-width: 90%;
+        margin-bottom: 20px;
+      }
+      .hero h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to my responsive landing page</h1>
+    <p>Your easy-to-use tool for organizing daily tasks and boosting productivity.</p>
+    <a href="#signup" class="cta">Sign Up Now</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <!-- Feature 1 -->
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/2099/2099076.png" alt="Checklist icon">
+      <div class="feature-title">Easy Task Management</div>
+      <div class="feature-desc">Quickly add, edit, and check off your daily tasks.</div>
+    </div>
+    <!-- Feature 2 -->
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Reminder icon">
+      <div class="feature-title">Smart Reminders</div>
+      <div class="feature-desc">Never miss a deadline with helpful reminders.</div>
+    </div>
+    <!-- Feature 3 -->
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/2919/2919600.png" alt="Statistics icon">
+      <div class="feature-title">Progress Tracking</div>
+      <div class="feature-desc">See your achievements and stay motivated every day.</div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="contact">
+      Contact us: lalalala@email.com | +123-456-7890
+    </div>
+    <div class="copyright">
+      &copy;  Made with care by IVANNA-STAR.
+    </div>
+  </footer>
+</body>
+</html>
